@@ -1,0 +1,24 @@
+# DEFAULT CACHE REGION
+jcs.default=
+jcs.default.cacheattributes=org.apache.commons.jcs.engine.CompositeCacheAttributes
+jcs.default.cacheattributes.MaxObjects=10
+jcs.default.cacheattributes.MemoryCacheName=org.apache.commons.jcs.engine.memory.lru.LRUMemoryCache
+jcs.default.cacheattributes.UseMemoryShrinker=false
+jcs.default.cacheattributes.MaxMemoryIdleTime=10
+jcs.default.cacheattributes.ShrinkerInterval=10
+jcs.default.elementattributes=org.apache.commons.jcs.engine.ElementAttributes
+jcs.default.elementattributes.IsEternal=false
+jcs.default.elementattributes.MaxLife=10
+jcs.default.elementattributes.IdleTime=10
+jcs.default.elementattributes.IsSpool=true
+jcs.default.elementattributes.IsRemote=true
+jcs.default.elementattributes.IsLateral=true
+
+# You can define multiple cache regions as per your requirement that has different TimeToLive
+jcs.region.currency=
+jcs.region.currency.cacheattributes=org.apache.commons.jcs.engine.CompositeCacheAttributes
+jcs.region.currency.cacheattributes.MaxObjects=10
+jcs.region.currency.cacheattributes.UseMemoryShrinker=false
+jcs.region.currency.cacheattributes.MaxMemoryIdleTime=3
+jcs.region.currency.elementattributes.MaxLife=3
+jcs.region.currency.elementattributes.IdleTime=3
